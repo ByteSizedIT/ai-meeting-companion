@@ -9,6 +9,8 @@ We need to install ffmpeg to be able to work with audio files in python:
 brew install ffmpeg (now globally installed) 
 '''
 
+'''Simple speech2text - DEMO ONLY, not part of main app'''
+
 import torch
 from transformers import pipeline
 
