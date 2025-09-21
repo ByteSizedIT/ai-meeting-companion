@@ -2,7 +2,7 @@
 # existing local venv: source ../3-simple-chatbot/.venv/bin/activate
 # for new env: python -m venv .venv ; source .venv/bin/activate
 
-# installing required libraries in my_env
+# installing required libraries in .venv
 pip install transformers==4.36.0 torch==2.1.1 gradio==5.23.2 langchain==0.0.343 ibm_watson_machine_learning==1.0.335 huggingface-hub==0.28.1
 
 pip install python-dotenv
@@ -40,3 +40,7 @@ LLAMA2_model = Model(
 llm = WatsonxLLM(LLAMA2_model)  
 
 print(llm("How to read a book effectively?"))
+
+'''
+RUN IN TERMINAL python3 simple_llm.py
+'''
